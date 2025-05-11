@@ -3,8 +3,6 @@ import {Node, NodeType} from "@/components/navigation/pathfinding/Graph.ts";
 
 import {nodeMarker} from "./markerStyles.ts";
 import {BORDER_WEIGHT, COLORS, CORE_WEIGHT, makeStroke} from "@/components/map/overlays/edgeHandler.ts";
-import {Prisma} from "prisma-client-10c6c18bb53a01a44a54dfa8db1182895ba5371e0b039bbd688512d2a2a2f60f";
-import type = Prisma.type;
 
 let prevMarker: google.maps.marker.AdvancedMarkerElement | null = null;
 

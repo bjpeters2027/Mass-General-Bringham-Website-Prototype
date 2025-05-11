@@ -1,9 +1,0 @@
-{
-  "name": "image-api",
-  "private": true,
-  "version": "0.0.0",
-  "scripts": {
-    "postinstall": "(python -m venv \"$INIT_CWD/.venv\" || python3 -m venv \"$INIT_CWD/.venv\") && (cmd \"/k call \"$INIT_CWD/.venv/Scripts/activate.bat\" && pip install -r \"$INIT_CWD/requirements.txt\"\" || sh \"$INIT_CWD/.venv/bin/activate && pip install -r ”$INIT_CWD/requirements.txt”\")",
-    "dev": ".venv/bin/python -m uvicorn app.main:app --reload --port 8000 || .venv/Scripts/python.exe -m uvicorn app.main:app --reload --port 8000"
-  }
-}

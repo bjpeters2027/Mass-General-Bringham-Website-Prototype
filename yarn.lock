@@ -2139,6 +2139,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@radix-ui/react-slot@npm:^1.2.2":
+  version: 1.2.2
+  resolution: "@radix-ui/react-slot@npm:1.2.2"
+  dependencies:
+    "@radix-ui/react-compose-refs": "npm:1.1.2"
+  peerDependencies:
+    "@types/react": "*"
+    react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+  checksum: 10/8014d9d9a5c215d913af8b54a1f60fb336b7c848329d7339968adff6071e2a7c159878fffb777d51d1c30844d4a1575b3fe48810b694e57d5a9c2fdff0da62f5
+  languageName: node
+  linkType: hard
+
 "@radix-ui/react-switch@npm:^1.1.4":
   version: 1.1.4
   resolution: "@radix-ui/react-switch@npm:1.1.4"
@@ -6909,7 +6924,7 @@ __metadata:
     "@radix-ui/react-dropdown-menu": "npm:^2.1.11"
     "@radix-ui/react-popover": "npm:^1.1.10"
     "@radix-ui/react-separator": "npm:^1.1.4"
-    "@radix-ui/react-slot": "npm:^1.2.0"
+    "@radix-ui/react-slot": "npm:^1.2.2"
     "@radix-ui/react-switch": "npm:^1.1.4"
     "@radix-ui/react-tooltip": "npm:^1.2.3"
     "@react-google-maps/api": "npm:^2.19.2"
@@ -7582,12 +7597,6 @@ __metadata:
   checksum: 10/cceb6a457000f8f6a50e1196429750d782afce5680dd878aa4221bd79972d68b3a55b4b1458fc682be978f4d3c6a249046aa0880637367216444ab7b014cfc98
   languageName: node
   linkType: hard
-
-"image-api@workspace:apps/imageAPI":
-  version: 0.0.0-use.local
-  resolution: "image-api@workspace:apps/imageAPI"
-  languageName: unknown
-  linkType: soft
 
 "immediate@npm:~3.0.5":
   version: 3.0.6

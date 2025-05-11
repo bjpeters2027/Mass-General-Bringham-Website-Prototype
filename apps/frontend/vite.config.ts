@@ -5,26 +5,28 @@ import tailwindcss from '@tailwindcss/vite';
 import * as process from 'process';
 import * as path from "node:path";
 
-// https://vitejs.dev/config/
 export default defineConfig({
     resolve: {
         preserveSymlinks: true,
         alias: {
-            "@": path.resolve(
-                __dirname,
-                "./src"
-            )
+            "@": path.resolve(__dirname, "./src")
         }
     },
     server: {
         host: 'localhost',
-        port: parseInt(process.env.FRONTEND_PORT),
+        port: parseInt(process.env.FRONTEND_PORT || '5173'),
         proxy: {
-            '/api': process.env.BACKEND_URL,
-            '/trpc': process.env.BACKEND_URL
+            '/api': {
+                target: process.env.BACKEND_URL || 'http://localhost:3001',
+                changeOrigin: true,
+            },
+            '/trpc': {
+                target: process.env.BACKEND_URL || 'http://localhost:3001',
+                changeOrigin: true,
+            }
         },
         watch: {
-            usePolling: true,
+            usePolling: true,  // Moved inside the watch object
         },
     },
     build: {

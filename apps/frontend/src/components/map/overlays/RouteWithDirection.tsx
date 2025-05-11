@@ -61,7 +61,7 @@ export function updateRouteProgress(
         (sum, step) => sum + (step.isFloorChange ? 0 : parseFloat(step.distance)),
         0
     );
-    let distanceCovered = totalDistance * progress;
+    const distanceCovered = totalDistance * progress;
     let accumulatedDistance = 0;
     let newStepIndex = 0;
 
